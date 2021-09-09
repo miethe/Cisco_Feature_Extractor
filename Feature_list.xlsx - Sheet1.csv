@@ -1,0 +1,183 @@
+Protocol/Feature,Buzzword,Additional Notes
+AAA,aaa new-model,
+AAA Accounting,aaa accounting,
+AAA Authentication,aaa authentication,
+AAA Authorization,aaa authorization,
+AAA Subscriber profile,subscriber profile,
+AAA Config Command Authorization,aaa authorization command,
+ANCP,ancp,
+Asynchronous Transfer Mode (ATM),atm,
+Authentication Proxy,auth-proxy,
+Auto QoS,auto qos,
+Auto-Summarization (BGP),auto-summary,Default enabled
+Auto-Summarization (EIGRP),auto-summary,"Default enabled before 15.0(1)M, 12.2(33)SRE, 12.2(33)XNE, 12.2(33)SXI4 and IOS-XE 2.5"
+Auto-Summarization (RIP),auto-summary,Default enabled on RIPv1 and RIPv2.  Cannot be disabled on RIPv1
+Bandwidth Remaining,bandwidth remaining,
+Bandwidth Remaining Percentage,bandwidth remaining percent,
+Bandwidth Remaining Ratio (BRR),bandwidth remaining ratio,
+BGP,router bgp,
+BGP Graceful Restart,ha-mode graceful-restart,This makes the device NSF Aware as well
+BGP TTL Check (GTSM),ttl-security hops,
+Bidirectional Forwarding Detection (BFD),bfd interval,
+Bridge Group,bridge-group,
+Bridge Group Virtual Interface (BVI),interface bvi,
+Call Home,call-home|callhome|call home,
+Call Manger Express (CME),telephony-service,
+Carrier Grade NAT (CGN),service cgn,
+CDP,cdp,Default enabled on Cisco devices
+CEF,ip cef,Default enabled on many devices
+CFM (Ethernet CFM),cfm,Default disabled
+Chain Validation,chain-validation,Used with PKI
+Cisco TrustSec (CTS),cts,Requires RADIUS and Dot1x
+Change of Authorization (CoA),dynamic-author,Requires RADIUS
+Command Scheduler (Kron),kron,
+Control Plane Policing (CoPP),control-plane\n service-policy,MUST be configured under the control-plane process
+Dead Peer Detection (DPD),crypto isakmp keepalive,
+Device Tracking,ip device tracking,
+DHCP Database,dhcp database,
+DHCP Snooping,ip dhcp snooping,Default disabled
+Distributed Traffic Shaping (DTS),shape,Must be in a policy-map
+DMVPN,ip nhrp map multicast dynamic,
+Dot1x,aaa authentication dot1x ,Requires RADIUS
+DSP Farm,dspfarm,
+DVTI,int (.*) type tunnel,
+DWDM Controller,controller dwdm,
+Dynamic ARP Inspection,ip arp inspection,
+Easy VPN (EzVPN),ezvpn,
+ECMP for Host Routes,enable-host-ecmp,
+EEM,event manager,
+EFM Mode,mode efm,
+EIGRP (Named-Mode),router eigrp \D,
+EIGRP (traditional),router eigrp \d,
+Energywise,energywise,
+EoMPLS,encapsulation mpls,
+ERSPAN,erspan,
+Ether Channel,channel-group,
+FEX,fex,
+Flex-Link,backup interface,
+Frame Relay,frame-relay,
+Fast Reroute (FRR),fast-reroute,
+G8032 Ethernet Ring,g8032,
+GetVPN,gdoi,Many bugs with GetVPN KS and GM
+GLBP,glbp,
+HSRP,standby,
+HTTP Server,ip http server,
+HTTPS Server,ip http secure-server,
+IGMP Snooping,igmp snooping,Default enabled for with IPv4 Multicast
+IGMP v3,igmp version 3,Default is version 2
+IKE,crypto isakmp enable,Default enabled; OSPF authentication also uses IKE
+IKEv2,crypto ikev2|isakmp,
+Intelligent Services Gateway (ISG),service-policy type service,
+IP SLA,ip sla,
+IP SLB,ip slb,
+IP Source Guard,ip verify source,Default disabled
+IPSEC,ipsec,
+IS-IS,router isis,
+ISDN,isdn,
+Kron,kron,
+LACP,mode (active|passive),
+Layer 2 ACL,mac access-list,
+Layer 2 Tunnel Protocol (L2TP),l2tp,
+LDAP,ldap,
+LFA-FRR for OSPF,fast-reroute,
+LISP,router lisp,Requires IOS-XE
+LLDP,lldp,Default disabled
+LLQ,priority,
+Login Quiet Mode,quiet-mode,
+Logging,logging console informational,
+Look Ahead Fragmentation (LAF),ipsec fragmentation before-encryption,Also known as IPSEC prefragmentation
+MAC Authentication Bypass (MAB),mac-auth-bypass,
+MAC Accounting,accounting mac-address,
+mDNS,mdns,
+MDT,mdt,
+MLDP,mpls mldp,
+MLPPP,ppp multilink,
+MPLS,mpls,CEF also needs to be enabled
+MPLS TE,mpls traffic-eng,
+MSDP,msdp,
+MSTP,mst,
+Multicast,ip multicast-routing,
+Multicast fast switching,mroute-cache,
+Multicast VPN (MVPN),ip multicast-routing vrf,
+Multilink Frame Relay (MFR),frame-relay multilink,
+Mux Encapsulation,encapsulation aal5mux,
+NAT,ip nat,
+NBAR,match-protocol,
+Netflow,ip route-cache flow|mls netflow,
+NHRP,nhrp,
+NSF (BGP),ha-mode graceful-restart,
+NSF (OSPF and EIGRP),nsf,
+NTP,ntp,"flo_dsgs7, mtrose, sierra,  mcp_dev, among others use NTPv4"
+OAM,ethernet oam,
+Object Tracking,track,
+Optomized Edge Routing (OER),(oer|pfr) master,Also known as Performance Routing
+OSPF,router ospf,Also known as OSPFv2
+OSPFv3,feature ospfv3|ipv6 router ospf,OSPF for IPv6
+PAgP,mode (auto|desirable),
+Parser View,parser view,
+Performance Routing (PfR),(pfr|oer) master,Also known as Optimized Edge Routing
+PFS,set pfs,
+PIM Bidirectional,ip pim bidir-enable,
+PIM BSR,ip pim bsr-candidate,
+PIM Dense Mode,ip pim (dense-|sparse-dense-)mode,
+PIM Sparse-mode,ip pim (dense-|sparse-dense-)mode,
+PoE,power inline,
+Port Channel,port-channel|channel-group,
+Port Security,port-security,
+PPPoA/PPPoE Autosense,aal5autoppp,
+PPPoE,pppoe,
+Private VLAN,private-vlan,
+RA Guard,raguard,
+RADIUS,radius,
+Resilient Ethernet Protocol (REP),rep,Default disabled
+Reverse Route Injection (RRI),reverse-route,
+RIP,router rip,Default receives RIPv1 and v2 packets and sends v1 packets
+Route Reflector,route-reflector-client,
+RPR,mode rpr,
+RPR+,mode rpr-plus,
+RSPAN,monitor session .* destination remote vlan,
+RSVP,rsvp,
+RT Filter,rtfilter|rt-filter,
+Scansafe,scansafe,
+Secondary IP address,secondary,
+Secure Copy (SCP) Server,ip scp server,
+Service Advertisement Framework (SAF),service-family (ipv4|ipv6) vrf,
+Service Reflection,ip service reflect,Requires multicast
+Shaping,shape,
+Single Connection,single-connection,Requires TACACS
+SIP,sip|session protocol sipv2,
+SNAP Encapsulation,encapsulation aal5snap,
+SPAN,monitor session,
+SNMP,snmp,
+Spanning Tree Protocol (STP),spanning-tree,
+SSH,input transport ssh,Default enabled
+SSH v2,ssh version 2,
+SSLVPN,webvpn,Also known as WebVPN
+Static ARP,arp,
+Static MAC entries,mac-address-table static,
+Storm Control,storm-control,
+STUN,stun,
+SVI,interface vlan,
+Switch Stacking,switch \d,
+SXP,cts sxp,
+TACACS,tacacs-server,
+Tunnel Protection,tunnel protection,
+UDLD,udld,Default disabled
+Unnumbered interface,ip unnumbered,
+UplinkFast,uplinkfast,
+URPF,ip verify unicast reverse-path,
+VACL,vlan access-map,
+Virtual Template,interface virtual-template,
+VLAN Mapping,vlan mapping,
+VPDN,vpdn,
+VRF,vrf,
+VRRP,vrrp,
+VSL,switch virtual link,
+VSS,switch virtual domain,
+VTP,vtp,Default version 1
+VTP Pruning,vtp pruning,
+WCCP,wccp,
+WebVPN,webvpn,Also known as SSLVPN
+WRED,random-detect,
+xConnect,xconnect,Also known as Pseudowire
+Zone Based Firewall (ZBFW),zone security,
